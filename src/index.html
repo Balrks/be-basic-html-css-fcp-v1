@@ -8,27 +8,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-blue-800 block py-6 ">balrks</a>
-                </div>
-                <div class="flex item-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
-                        <span class="w-[30px] h-[20px] my-2 block bg-black"></span>
-                        <span class="w-[30px] h-[20px] my-2 block bg-black"></span>
-                        <span class="w-[30px] h-[20px] my-2 block bg-black"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
-    <!-- Header End -->
-
+<!-- Navbar Start -->
+<nav class="fixed w-full z-10 bg-white shadow">
+    <div class="container flex items-center justify-between px-4 py-3 md:py-4">
+      <a href="#home" class="font-bold text-lg text-blue-800">balrks</a>
+  
+      <!-- Desktop Navbar -->
+      <div class="hidden md:block">
+        <ul class="flex items-center space-x-8">
+          <li><a href="#home" class="font-medium text-gray-700 hover:text-blue-800">Home</a></li>
+          <li><a href="#about" class="font-medium text-gray-700 hover:text-blue-800">About</a></li>
+          <li><a href="#portfolio" class="font-medium text-gray-700 hover:text-blue-800">Portfolio</a></li>
+          <li><a href="#contact" class="font-medium text-gray-700 hover:text-blue-800">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Mobile Navbar -->
+      <div class="md:hidden">
+        <button id="hamburger" name="hamburger" type="button" class="block md:hidden">
+          <span class="w-6 h-1 my-1 block bg-gray-600"></span>
+          <span class="w-6 h-1 my-1 block bg-gray-600"></span>
+          <span class="w-6 h-1 my-1 block bg-gray-600"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->  
 
     <!-- Section 1 Start -->
     <section id="home" class="pt-8 lg:pt-36">
@@ -94,3 +99,4 @@
     </section>
 
     <!-- Section 2 End -->
+    xccs
